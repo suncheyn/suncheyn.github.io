@@ -10,56 +10,146 @@ EMAIL: cheyenmc@uci.edu
   <meta charset="utf-8">
   <meta name="author" content="Cheyenne Chavez">
   <meta name="description" content="Cheyenne Chavez Design Portfolio">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
+  <!-- you would link to an external stylesheet here! -->
+  <!-- you would also link to Bootstrap here! -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  
   <title>Cheyenne Chavez</title>
+  
 </head>
+
+<script type="text/javascript">
+  $(function () {
+    $(".navbar-placeholder").load("navbar.html #main");
+  });
+</script>
+
 <body>
   <!-- NAV BAR -->
-  <div class='nav'>
-    <div class='container-fluid'>
-      <div class='row'>
-        <div class='col-md-8 col-s-10'>
-          <a href='index.html' onclick="changeColor()"><span id='name'>Cheyenne Chavez</span></a>
-        </div>
-        <div class='col-md-2 col-s-1'>
-          <a href='..\projects\index.html'><span id='header-links'>Projects</span></a>
-          <a href='..\contactindex.html'><span id='header-links'>Contact</span></a></div>
+  <div class="navbar-placeholder"></div>
+
+
+  <!-- HEADER -->
+  <div class="card" id="mainHeader">
+    <img src="mv_footer.png" class="card-img" alt="">
+    <div class="card-img-overlay">
+      <h1 id="mainText">Hi, I'm Cheyenne - a UX designer excited to create<br />user-centered solutions</h1>
+      <div class="mx-auto">
+        <ul class="list-group list-group-horizontal justify-content-center">
+          <li class="list-group-item"><i class="material-icons">work</i><br /><b>Technical Intern</b><br />Center for Digital Transformation</li>
+          <li class="list-group-item"><i class="material-icons">cloud</i><br /><b>Instructor</b><br />Dreams for Schools</li>
+          <li class="list-group-item"><i class="material-icons">code</i><br /><b>User Experience Design Intern</b><br />Codazen</li>
+          <li class="list-group-item"><i class="material-icons">emoji_objects</i><br /><b>Mentor</b><br />NCWIT AspireIT</li>
+        </ul>
       </div>
     </div>
   </div>
-  
-  <!-- HEADER ARTWORK -->
-  <div class='header'>
-    <h2>My name is Cheyenne - a UX designer excited to create user-centered solutions</h2>
-  </div>
-  <script>
-    function changeColor() {
-      document.getElementById("name").style.color = "black";
-    }
-    </script>
+
 
   <!-- BODY -->
-  <div class='container'>
+  
+  <div class='container-fluid'>
     <h3>Portfolio Overview</h3>
-      <div class='col-md-4 col-xs-12'>
-        <img src='https://suncheyndesigns.files.wordpress.com/2019/05/splash.png' alt='Travel by Design Splash' class='img-fluid'>
-        <p>Travel by Design</p>
-      </div> 
-      <div class='col-md-4 col-xs-12'>
-        <img src='https://suncheyndesigns.files.wordpress.com/2019/03/choose-your-doodle.png' alt='Doodle Redesign Menu' class='img-fluid'>
-        <p>Doodle Website Redesign</p>
-      </div> 
-      <div class='col-md-4 col-xs-12'>
-        <img src='https://suncheyndesigns.files.wordpress.com/2018/08/ea_redesigned.jpg' alt='EA Website Redesign Home' class='img-fluid'>
-        <p>EA Website Redesign</p>
-      </div> 
+    <div class="row">
+      <div class="card-columns mx-auto">
+        <!-- NEW PROJECTS BELOW HERE -->
+        <!-- COLUMN 1 -->
+        <div class="card">
+          <img
+            src="https://64.media.tumblr.com/2dbdde745c122110e22e1618608a4689/88b81680adf6573f-d5/s250x400/55441a3a2235ea256d617cc74aa3028f40de3f22.png"
+            class="card-img-top" alt="EA Website Redesign Home">
+          <div class="card-body">
+            <h4>Center for Digital Transformation: Website Redesign</h4>
+            <p class="card-text">An overhaul of the website for the research group, Center for Digital
+              Transformation under the Paul Merage School of Business at UCI.</p>
+              <a href="projects/CDT/index.html" class="btn btn-outline-primary stretched-link">Read More</a>      
+            </div>
+        </div>
+
+        
+          <div class="card">
+            <img src="https://suncheyndesigns.files.wordpress.com/2019/05/splash.png" class="card-img-top"
+              alt="Travel by Design Splash Art">
+            <div class="card-body">
+              <h4>Travel by Design</h4>
+              <p class="card-text">A 10-week sponsored project in which we redesigned an existing mobile application in
+                React Native to curate travel articles in order for the user to plan overseas vacations. </p>
+            </div>
+          </div>
+        
+        <!-- COLUMN 2 -->
+        <div class="card">
+          <img
+            src="https://64.media.tumblr.com/7e3d607c8545dd077302fcb95a77c856/88b81680adf6573f-de/s250x400/ce6959293832b59909a030496838524ead9817be.png"
+            class="card-img-top" alt="EA Website Redesign Home">
+          <div class="card-body">
+            <h4>Assure: IoT Device and Mobile Application</h4>
+            <p class="card-text">An IoT and joint mobile application that was created in Ionic using AngularJS that
+              aimed to prevent and help victims of sexual assault and harassment. The mobile app connected to a wearable
+              that allowed users to geotag their location and call for help if in danger.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://suncheyndesigns.files.wordpress.com/2018/08/ea_redesigned.jpg" class="card-img-top"
+            alt="EA Website Redesign Home">
+          <div class="card-body">
+            <h4>EA Website Redesign</h4>
+            <p class="card-text">description</p>
+          </div>
+        </div>
+        <!-- COLUMN 3 -->
+        <div class="card">
+          <img
+            src="https://64.media.tumblr.com/2ad2d6db70170acc149f41f9e38507f2/88b81680adf6573f-31/s250x400/fd70b10cb38e111fe285820a5ae9b6c8830cac80.png"
+            class="card-img-top" alt="Doode Redesign Menu">
+          <div class="card-body">
+            <h4>Dreams for Schools: Website and Mobile Application</h4>
+            <p class="card-text">A 20-week sponsored project made using React and React Native to create a
+              multi-platform application that will be used by 200+ instructors and admins to communicate, access
+              resources, and check in using geotagging.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://64.media.tumblr.com/2ad2d6db70170acc149f41f9e38507f2/88b81680adf6573f-31/s250x400/fd70b10cb38e111fe285820a5ae9b6c8830cac80.png"
+            class="card-img-top" alt="Doode Redesign Menu">
+          <div class="card-body">
+            <h4>Doodle Website Redesign</h4>
+            <p class="card-text">description</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://suncheyndesigns.files.wordpress.com/2019/03/choose-your-doodle.png" class="card-img-top"
+            alt="Doode Redesign Menu">
+          <div class="card-body">
+            <h4>Doodle Website Redesign</h4>
+            <p class="card-text">description</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://suncheyndesigns.files.wordpress.com/2019/03/choose-your-doodle.png" class="card-img-top"
+            alt="Doode Redesign Menu">
+          <div class="card-body">
+            <h4>Doodle Website Redesign</h4>
+            <p class="card-text">description</p>
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
+
+  <!-- END OF BODY-->
 </body>
+
 </html>
