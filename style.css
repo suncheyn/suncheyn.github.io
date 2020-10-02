@@ -5,6 +5,9 @@
     --accent-color3: #ef626c;
     /* light baby pink:  #FFBCB5 */
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     padding-top: 50px;
 }
@@ -133,10 +136,27 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.inner-container {
-    padding: 15px;
+.inner-nav {
+    background-color: #efefef;
+}
+.inner-nav-item {
+    list-style-type: none;
+    padding: 25px;
+    color: var(--accent-color2);
 }
 
+.inner-container {
+    padding: 50px 15px 0px 15px;
+    margin-bottom: -10px;
+ 
+}
+.project-pics {
+    width: 40%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 5px;
+}
 /* About Me */
 .profilePic {
     margin-top: 20px;
@@ -176,7 +196,7 @@ h1:not(#mainText) {
 }
 h2 {
     font-family: 'Roboto';
-    color:var(--main-color);
+    color:var(--accent-color3);
 }
 h3 {
     font-family: 'Roboto';
