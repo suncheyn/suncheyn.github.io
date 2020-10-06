@@ -13,6 +13,9 @@ body {
 }
 
 /* Nav Bar */
+.navbar {
+    background-color: white;
+}
 .navbar-brand {
     font-family: 'Quicksand';
     color: #4c443c;
@@ -21,9 +24,7 @@ body {
     font-family: 'Roboto';
     color: var(--accent-color2);
 }
-.navbar {
-    background-color: white;
-}
+
 
 /* Sitewide */
 .container-fluid{
@@ -127,6 +128,7 @@ body {
 }
 .header-img {
     filter: brightness(50%);
+    filter: blur(5px);
     width: 100%;
 }
 .title {
@@ -158,10 +160,24 @@ body {
     padding-bottom: 5px;
 }
 /* About Me */
+*{box-sizing:border-box}
 .profilePic {
     margin-top: 20px;
     border-radius: 200px;
 }
+.container {
+    width: 100%;
+    background-color: var(--accent-color2);
+}
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+  
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
 .resume {
     border:none;
     height: 1000px;
