@@ -13,17 +13,22 @@ EMAIL: cheyenmc@uci.edu
   <!-- you would link to an external stylesheet here! -->
   <!-- you would also link to Bootstrap here! -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   <link rel="icon" href="cheychavez.png">
-  
+
   <title>Cheyenne Chavez</title>
-  
+
 </head>
 
 <script type="text/javascript">
@@ -41,21 +46,25 @@ EMAIL: cheyenmc@uci.edu
   <div class="card" id="mainHeader">
     <img src="mv_footer.png" class="card-img" alt="">
     <div class="card-img-overlay">
-      <h1 id="mainText">Hi, I'm Cheyenne - a UX designer excited to create<br />user-centered solutions</h1>
-      <div class="mx-auto">
-        <ul class="list-group list-group-horizontal justify-content-center">
-          <li class="list-group-item"><i class="material-icons">work</i><br /><b>Technical Intern</b><br />Center for Digital Transformation</li>
-          <li class="list-group-item"><i class="material-icons">cloud</i><br /><b>Instructor</b><br />Dreams for Schools</li>
-          <li class="list-group-item"><i class="material-icons">code</i><br /><b>User Experience Design Intern</b><br />Codazen</li>
-          <li class="list-group-item"><i class="material-icons">emoji_objects</i><br /><b>Mentor</b><br />NCWIT AspireIT</li>
+      <h1 id="mainText">Hi, I'm Cheyenne - a UX designer and Front-end Developer excited to create<br />user-centered solutions</h1>
+      
+        <ul class="list-group">
+          <li class="list-group-item"><i class="material-icons">work</i><br /><b>Technical Intern</b><br />Center for
+            Digital Transformation</li>
+          <li class="list-group-item"><i class="material-icons">cloud</i><br /><b>Instructor</b><br />Dreams for Schools
+          </li>
+          <li class="list-group-item"><i class="material-icons">code</i><br /><b>User Experience Design
+              Intern</b><br />Codazen</li>
+          <li class="list-group-item"><i class="material-icons">emoji_objects</i><br /><b>Mentor</b><br />NCWIT AspireIT
+          </li>
         </ul>
-      </div>
+      
     </div>
   </div>
 
 
   <!-- BODY -->
-  
+
   <div class='container-fluid'>
     <h3>Portfolio Overview</h3>
     <div class="row">
@@ -64,39 +73,35 @@ EMAIL: cheyenmc@uci.edu
 
         <!-- COLUMN 1 -->
         <div class="card">
-          <img
-            src="/projects/CDT/CDT Website 1.png"
-            class="card-img-top" alt="CDT Home Page">
+          <img src="/projects/CDT/CDT Website 1.png" class="card-img-top" alt="CDT Home Page">
           <div class="card-body">
             <h4>Center for Digital Transformation: Website</h4>
             <p class="card-text">An overhaul of the website for the research group, Center for Digital
               Transformation under the Paul Merage School of Business at UCI.</p>
-              <a href="projects/CDT/index.html" class="btn btn-outline-primary stretched-link">Read More</a>      
-            </div>
+            <a href="projects/CDT/index.html" class="btn btn-outline-primary stretched-link">Read More</a>
+          </div>
         </div>
 
-        
-          <div class="card">
-            <img src="https://suncheyndesigns.files.wordpress.com/2019/05/splash.png" class="card-img-top"
-              alt="Travel by Design Splash Art">
-            <div class="card-body">
-              <h4>Travel by Design</h4>
-              <p class="card-text">A 10-week sponsored project in which we redesigned an existing mobile application in
-                React Native to curate travel articles in order for the user to plan overseas vacations. </p>
-            </div>
+
+        <div class="card">
+          <img src="https://suncheyndesigns.files.wordpress.com/2019/05/splash.png" class="card-img-top"
+            alt="Travel by Design Splash Art">
+          <div class="card-body">
+            <h4>Travel by Design</h4>
+            <p class="card-text">A 10-week sponsored project in which we redesigned an existing mobile application in
+              React Native to curate travel articles in order for the user to plan overseas vacations. </p>
           </div>
-        
+        </div>
+
         <!-- COLUMN 2 -->
         <div class="card">
-          <img
-            src="projects/Assure/Assure Flow 1.jpg"
-            class="card-img-top" alt="Assure Work Flow">
+          <img src="projects/Assure/Assure Flow 1.jpg" class="card-img-top" alt="Assure Work Flow">
           <div class="card-body">
             <h4>Assure: IoT Device and Mobile Application</h4>
             <p class="card-text">An IoT and joint mobile application that was created in Ionic using AngularJS that
               aimed to prevent and help victims of sexual assault and harassment. The mobile app connected to a wearable
               that allowed users to geotag their location and call for help if in danger.</p>
-              <a href="projects/Assure/index.html" class="btn btn-outline-primary stretched-link">Read More</a>
+            <a href="projects/Assure/index.html" class="btn btn-outline-primary stretched-link">Read More</a>
           </div>
         </div>
 
@@ -108,14 +113,12 @@ EMAIL: cheyenmc@uci.edu
             <p class="card-text">description</p>
           </div>
         </div>
-       
-        
+
+
 
         <!-- COLUMN 3 -->
         <div class="card">
-          <img
-            src="projects/DFS/DREAMTEAM+Poster.png"
-            class="card-img-top" alt="Doode Redesign Menu">
+          <img src="projects/DFS/DREAMTEAM+Poster.png" class="card-img-top" alt="Doode Redesign Menu">
           <div class="card-body">
             <h4>Dreams for Schools: Website and Mobile Application</h4>
             <p class="card-text">A 20-week sponsored project made using React and React Native to create a
