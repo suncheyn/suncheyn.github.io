@@ -20,6 +20,7 @@ EMAIL: cheyenmc@uci.edu
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/994e566dc8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -35,6 +36,7 @@ EMAIL: cheyenmc@uci.edu
   $(function () {
     $(".navbar-placeholder").load("navbar.html #main");
   });
+
 </script>
 
 <body>
@@ -46,6 +48,40 @@ EMAIL: cheyenmc@uci.edu
   <div class="card" id="mainHeader">
     <img src="mv_footer.png" class="card-img" alt="">
     <div class="card-img-overlay">
+      <!-- HANDWRITTEN SVG  -->
+      <div id="logo-container">
+
+        <svg version="1.1" id="cheyLogo" x="0px" y="0px" viewBox="0 0 352.893 256.916" xml:space="preserve">
+          <defs>
+            <clipPath id="c-1" transform="translate(4.58 21.753)">
+              <path
+                d="M255.4,7.684c21.2-14,62.4-10.4,77.2,23.6s6.6,96.4-29.2,151.6-88.4,20.8-88.8,6.8,19.8-2.8,19.8-2.8c7-1.6,17.6,1.6,42.8-31.6s34.4-134.2.2-134-41.4,38-46.2,29,3.4-28.4,24.6-42.4Z" />
+            </clipPath>
+            <clipPath id="p-1" transform="translate(4.58 21.753)">
+              <path d="M161.262,191.29c2.8-4,17.4-5.6,19.2,2.4s-4.6,15.8-13.4,15.8-10.2-11.6-5.8-18Z" />
+            </clipPath>
+            <clipPath id="c-2" transform="translate(4.58 21.753)">
+              <path
+                d="M83.8,7.884c21.2,14,29.4,33.4,24.6,42.4s-12-28.8-46.2-29-25,100.8.2,134,35.8,30,42.8,31.6c0,0,20.2-11.2,19.8,2.8s-53,48.4-88.8-6.8S-7.8,65.284,7,31.284s56-37.6,77.2-23.6Z" />
+            </clipPath>
+          </defs>
+          <g style="clip-path: url(#c-1)">
+            <path class="chey-path" fill="none" stroke="#fff" stroke-miterlimit="10"
+              d="M225.062,52.8S256.387.366,287.567,6.2c10.242,1.916,16.709,9.371,19.5,12.6,33.73,39.107-4.62,131.989-9.5,143.5a59.084,59.084,0,0,1-28,29c-4.289,2.056-20.76,9.635-40.5,3.5a54.952,54.952,0,0,1-27-19"
+              transform="translate(4.58 21.753)" />
+          </g>
+          <g style="clip-path: url(#p-1)">
+            <line class="chey-path-p" fill="none" stroke="#fff" stroke-miterlimit="10" x1="174.38" y1="225.49"
+              x2="174.38" y2="214.738" />
+          </g>
+          <g style="clip-path: url(#c-2)">
+            <path class="chey-path" fill="none" stroke="#fff" stroke-miterlimit="10"
+              d="M118.735,64.759c-24.494-35.235-54-61.09-72.6-53.894C23.815,19.5,14.066,76.949,32.893,153c2.165,6.3,11.086,30,35.318,44.383a73.606,73.606,0,0,0,48.071,9.51l37.28-33.815"
+              transform="translate(4.58 21.753)" />
+          </g>
+        </svg>
+      </div>
+
       <h1 id="mainText">Hi, I'm Cheyenne! <br>I am a UX Designer and Front-end Developer excited to create user-centered
         solutions</h1>
 
@@ -67,7 +103,9 @@ EMAIL: cheyenmc@uci.edu
   <!-- BODY -->
 
   <div class='container-fluid'>
-    <h2>Portfolio Overview</h2>
+    <h2 id="portfolio">Portfolio Overview</h2>
+    <!-- BODY -->
+
     <div class="row">
       <div class="card-columns mx-auto">
         <!-- NEW PROJECTS BELOW HERE -->
@@ -83,16 +121,16 @@ EMAIL: cheyenmc@uci.edu
           </div>
         </div>
 
-
         <div class="card">
-          <img src="https://suncheyndesigns.files.wordpress.com/2019/05/splash.png" class="card-img-top"
-            alt="Travel by Design Splash Art">
+          <img src="https://suncheyndesigns.files.wordpress.com/2019/03/choose-your-doodle.png" class="card-img-top"
+            alt="Doode Redesign Menu">
           <div class="card-body">
-            <h4>Travel by Design</h4>
-            <p class="card-text">A 10-week sponsored project in which we redesigned an existing mobile application in
-              React Native to curate travel articles in order for the user to plan overseas vacations. </p>
+            <h4>Doodle Website Redesign</h4>
+            <p class="card-text">Doodle is an online scheduling site which allows users to create polls and schedule
+              meetings at specific times. </p>
           </div>
         </div>
+       
 
         <!-- COLUMN 2 -->
         <div class="card">
@@ -100,24 +138,11 @@ EMAIL: cheyenmc@uci.edu
           <div class="card-body">
             <h4>Assure: IoT Device and Mobile Application</h4>
             <p class="card-text">An IoT and joint mobile application that was created in Ionic using AngularJS that
-              aimed to prevent and help victims of sexual assault and harassment. The mobile app connected to a wearable
-              that allowed users to geotag their location and call for help if in danger.</p>
+              aimed to prevent and help victims of sexual assault and harassment. The mobile app connected to a
+              wearable that allowed users to geotag their location and call for help if in danger.</p>
             <a href="projects/Assure/index.html" class="btn btn-outline-primary stretched-link">Read More</a>
           </div>
         </div>
-
-        <div class="card">
-          <img src="https://suncheyndesigns.files.wordpress.com/2018/08/ea_redesigned.jpg" class="card-img-top"
-            alt="EA Website Redesign Home">
-          <div class="card-body">
-            <h4>EA Website Redesign</h4>
-            <p class="card-text">A one day project that focuses on improving the Electronic Arts (EA) website to
-              reorganize important sections shown on the main page.The first half of the page now showcases the latest
-              games Electronic Arts has created. This makes the page more compact and to the point.</p>
-          </div>
-        </div>
-
-
 
         <!-- COLUMN 3 -->
         <div class="card">
@@ -133,20 +158,174 @@ EMAIL: cheyenmc@uci.edu
         </div>
 
         <div class="card">
-          <img src="https://suncheyndesigns.files.wordpress.com/2019/03/choose-your-doodle.png" class="card-img-top"
-            alt="Doode Redesign Menu">
+          <img src="https://alyssajoyprodigalidad.com/wp-content/uploads/2020/03/Capture-3-1024x537.png"
+            class="card-img-top" alt="Untitled Jane Game">
           <div class="card-body">
-            <h4>Doodle Website Redesign</h4>
-            <p class="card-text">Doodle is an online scheduling site which allows users to create polls and schedule
-              meetings at specific times. </p>
+            <h4>Untitled Jane Game</h4>
+            <p class="card-text">A short series of 2 mini games telling the story of a WOC programmer trying to climb up
+              the corporate ladder within her company.</p>
           </div>
         </div>
+        <!--URL: https://untitled-jane-game.herokuapp.com/index.htm-->
+       
+        <div class="card">
+          <img src="https://suncheyndesigns.files.wordpress.com/2019/05/splash.png" class="card-img-top"
+            alt="Travel by Design Splash Art">
+          <div class="card-body">
+            <h4>Travel by Design</h4>
+            <p class="card-text">A 10-week sponsored project in which we redesigned an existing mobile application in
+              React Native to curate travel articles in order for the user to plan overseas vacations. </p>
+          </div>
+        </div>
+
       </div>
     </div>
-
   </div>
+  <!-- END OF PROJECTS -->
 
-  <!-- END OF BODY-->
+  <div id="aboutBackground" class='container-fluid'>
+    <div id="profile">
+      <h2>About Me</h2>
+      <img src='./about/IMG_6094-300x240.jpg' class='profilePic' alt='Cheyenne Chavez'>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a href="https://www.linkedin.com/in/cheyenne-chavez-844084158/">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://github.com/suncheyn">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+        </li>
+        <li class="list-group-item">
+          <a href="mailto:cheymariechavez@gmail.com">
+            <i class="fas fa-envelope fa-3x"></i>
+        </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card column">
+
+          <h3 class="aboutTitle"><b>User Experience Designer</b></h3>
+
+          <!-- Photoshop -->
+          <div class="skill">
+            <i class="fas fa-palette fa-lg"></i>
+            <p class="skillTitle">Adobe Photoshop</p>
+            <div class="meter">
+              <span style="width:95%;"><span class="progress">
+                  <p class="percentage">95%</p>
+                </span></span>
+            </div>
+          </div>
+
+          <!-- XD -->
+          <div class="skill">
+            <i class="far fa-newspaper fa-lg"></i>
+            <p class="skillTitle">Adobe XD</p>
+            <div class="meter">
+              <span style="width:85%;"><span class="progress">
+                  <p class="percentage">85%</p>
+                </span></span>
+            </div>
+          </div>
+          <!-- Axure -->
+          <div class="skill">
+            <i class="fas fa-border-style fa-lg"></i>
+            <p class="skillTitle">Axure</p>
+            <div class="meter">
+              <span style="width:75%;"><span class="progress">
+                  <p class="percentage">75%</p>
+                </span></span>
+            </div>
+          </div>
+
+          <!-- Sketch -->
+          <div class="skill">
+            <i class="fab fa-sketch fa-lg"></i>
+            <p class="skillTitle">Sketch</p>
+            <div class="meter">
+              <span style="width:65%;"><span class="progress">
+                  <p class="percentage">65%</p>
+                </span></span>
+            </div>
+          </div>
+
+          <!-- Figma-->
+          <div class="skill">
+            <i class="fab fa-figma fa-lg"></i>
+            <p class="skillTitle">Figma</p>
+            <div class="meter">
+              <span style="width:60%;"><span class="progress">
+                  <p class="percentage">60%</p>
+                </span></span>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="col-md-6">
+        <div class="card column">
+
+          <h3 class="aboutTitle"><b>Front-end Developer</b></h3>
+
+          <!-- HTML -->
+          <div class="skill">
+            <i class="fab fa-html5 fa-lg"></i>
+            <p class="skillTitle">HTML</p>
+            <div class="meter">
+              <span style="width:90%;"><span class="progress">
+                  <p class="percentage">90%</p>
+                </span></span>
+            </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill">
+            <i class="fab fa-css3-alt fa-lg"></i>
+            <p class="skillTitle">CSS</p>
+            <div class="meter">
+              <span style="width:80%;"><span class="progress">
+                  <p class="percentage">80%</p>
+                </span></span>
+            </div>
+          </div>
+
+          <!-- JS -->
+          <div class="skill">
+            <i class="fab fa-js-square fa-lg"></i>
+            <p class="skillTitle">JavaScript</p>
+            <div class="meter">
+              <span style="width:65%;"><span class="progress">
+                  <p class="percentage">65%</p>
+                </span></span>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="skill">
+            <i class="fab fa-react fa-lg"></i>
+            <p class="skillTitle">React</p>
+            <div class="meter">
+              <span style="width:60%;"><span class="progress">
+                  <p class="percentage">60%</p>
+                </span></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
 </body>
 
 </html>

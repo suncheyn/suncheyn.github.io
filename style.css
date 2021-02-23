@@ -62,6 +62,28 @@ body {
     padding: 4rem;
 }
 
+#logo-container {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    text-align: center;
+}
+#cheyLogo {
+    height: 11rem;
+}
+.chey-path {
+    stroke-dasharray: 2700;
+    stroke-dashoffset: 2700;
+    stroke-width: 55;
+    animation: letter-animation 8s linear forwards;
+}
+.chey-path-p {
+    stroke-dasharray: 2700;
+    stroke-dashoffset: 2700;
+    stroke-width: 55;
+    animation: letter-animation 75s 1s linear forwards;
+}
+
 .list-group {
     flex-direction: row;
     justify-content: center;
@@ -78,17 +100,19 @@ body {
 
 .card-columns {
     padding-top: 20px;
-    width: 80%;
+    width: 85%;
     align-content: center;
+    column-gap: 0.5rem;
 }
-
+.card-columns .card {
+    margin-bottom: 0.5rem;
+}
 .card:not(#mainHeader):hover {
     overflow: hidden;
     border-color: #ececec;
     box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.25);
     text-decoration-color: var(--accent-color2);
 }
-
 .card:not(#mainHeader):hover h4 {
     color: var(--main-color)
 }
@@ -291,10 +315,10 @@ body {
 
 .progress {
     background-image: linear-gradient(to right, var(--accent-color3), var(--main-color));
-    animation: fillBar 3s ease-in-out both;
+    animation: fillBar 10s ease-in-out both;
     border-style: solid;
     border-width: 1px;
-    border-color: var(--accent-color1);
+    border-color: var(--main-color);
 }
 
 .percentage {
@@ -304,7 +328,7 @@ body {
     padding: 2px;
     text-align: left;
     font-size: 125%;
-    animation: 4s ease-out fadeIn;
+    animation: 7s ease-out fadeIn;
 }
 
 .fab, .far, .fas {
@@ -387,6 +411,9 @@ h5, h6 {
         padding: 0;
         font-size: 1.5rem;
     }
+    #cheyLogo {
+        height: 2rem;
+    }
     .inner-nav .list-group {
         flex-direction: column;
     }
@@ -438,6 +465,9 @@ h5, h6 {
     .card-horizontal {
         flex-direction: column;
     }
+    #cheyLogo {
+        height: 4rem;
+    }
     h1 {
         font-size: 1.35rem;
     }
@@ -454,6 +484,15 @@ h5, h6 {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes letter-animation {
+    0% {
+        stroke-dashoffset: 2700;
+    }
+    100% {
+        stroke-dashoffset: 0;
     }
 }
 
