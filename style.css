@@ -1,9 +1,8 @@
 :root {
-    --main-color: #FFBCB5;
-    --accent-color1: #4c443c;
-    --accent-color2: #07beb8;
-    --accent-color3: #ef626c;
-    /* light baby pink:  #FFBCB5 */
+    --main-color: #9AD2CB;
+    --accent-color1: #F0A393;
+    --accent-color2: #232020;
+
 }
 
 html {
@@ -114,7 +113,7 @@ body {
     text-decoration-color: var(--accent-color2);
 }
 .card:not(#mainHeader):hover h4 {
-    color: var(--main-color)
+    color: var(--accent-color1)
 }
 
 /* Buttons */
@@ -145,7 +144,7 @@ body {
 /* Projects Main Page */
 
 .card:not(#mainHeader):not(.column):hover h3 {
-    color: var(--main-color)
+    color: var(--accent-color1)
 }
 
 .card {
@@ -156,7 +155,7 @@ body {
 .card-title {
     font-family: 'Roboto';
     font-size: 1.5rem;
-    color: var(--accent-color3);
+    color: var(--accent-color2);
     animation: 1s ease-out fadeIn;
 }
 
@@ -273,7 +272,7 @@ body {
 }
 
 .list-group-item a {
-    color: var(--accent-color3);
+    color: var(--accent-color2);
 }
 
 .column {
@@ -314,11 +313,10 @@ body {
 }
 
 .progress {
-    background-image: linear-gradient(to right, var(--accent-color3), var(--main-color));
+    /*background-image: linear-gradient(to right, var(--accent-color2), var(--accent-color1));*/
+    background-color: var(--accent-color1);
     animation: fillBar 10s ease-in-out both;
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--main-color);
+ 
 }
 
 .percentage {
@@ -350,7 +348,7 @@ p {
 
 li:not(.regular):hover {
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
-    color: var(--accent-color3);
+    color: var(--accent-color2);
 }
 
 h1 {
@@ -368,7 +366,7 @@ h1:not(#mainText) {
 
 h2 {
     font-family: 'Roboto';
-    color: var(--accent-color3);
+    color: var(--accent-color2);
     font-size: 2rem;
 }
 
@@ -379,7 +377,7 @@ h3 {
 
 h4 {
     font-family: 'Roboto';
-    color: var(--accent-color3);
+    color: var(--accent-color2);
 }
 
 h5, h6 {
