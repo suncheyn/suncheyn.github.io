@@ -17,8 +17,8 @@ body {
 /* Sitewide */
 
 .container-fluid {
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 15%;
+    padding-left: 15%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -263,9 +263,22 @@ body {
     font-weight: bold;
 }
 
-.project-pics {
-    width: 35%;
+.project-pics-persona {
+    width: 80%;
     display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 5px;
+}
+.project-pics-user-flow {
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 5px;
+}
+.project-pics-wireframe {
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 5px;
