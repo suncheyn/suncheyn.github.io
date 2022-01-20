@@ -12,8 +12,7 @@ LINK WEBSITE
     <meta charset="utf-8">
     <meta name="author" content="Cheyenne Chavez">
     <meta name="description" content="Cheyenne Chavez Design Portfolio">
-    <!-- you would link to an external stylesheet here! -->
-    <!-- you would also link to Bootstrap here! -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -22,6 +21,7 @@ LINK WEBSITE
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="icon" href="/cheychavez.png">
 
     <title>Dreams for Schools</title>
 </head>
@@ -65,24 +65,90 @@ LINK WEBSITE
     <div class="container-fluid">
 
         <!-- Summary -->
-        <div class="inner-container" id="summary">
+        <div class="container" id="overview">
+            <div class="row">
+                <table class="table col-md-6">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h3>Problem</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A personalized product that would allow administrators to communicate with their 200+
+                                instructors for their after-school program, AppJam+.</td>
+                    </tbody>
+                </table>
 
+                <table class="table col-md-6">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h3>Solution</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A mobile and web application for both administrators and instructors to utilize.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table col-md-6">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h3>Role</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>I played two key roles in this project as both <b>UX Designer</b> and <b>Front-End
+                                    Developer</b> for mobile.
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table col-md-6">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h3>Approach</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Competitive Analysis <br />
+                                Personas <br />
+                                Prototypes
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="inner-container" id="summary">
             <h2>Summary</h2>
             <!-- Background -->
             <h3>Background</h3>
-            <p>Dreams for Schools is a non-profit organization that helps K-12 students find a passion for technolgoy
-                with multiple after school Fprograms.</p>
-            <!-- Role I Played -->
-            <h3>Roles I Played</h3>
-            <ul>
-                <li class="regular">UX Designer</li>
-                <li class="regular">Front-end Developer for Mobile</li>
-            </ul>
+            <p>Dreams for Schools is a non-profit organization that helps K-12 students find a passion for
+                technolgoy
+                with multiple after-school programs.</p>
+
             <!-- Goals -->
-            <h3>Goals</h3>
+            <h3>Objectives</h3>
             <ol>
                 <li class="regular">Able to have communication with 200+ instructors</li>
-                <li class="regular">Store necessary materials for instructors</li>
+                <li class="regular">Store necessary materials for instructors that they can access</li>
                 <li class="regular">Allow instructors to check-in and geotag their location</li>
             </ol>
         </div>
@@ -90,18 +156,30 @@ LINK WEBSITE
         <!-- Challenges -->
         <div class="inner-container" id="challenges">
             <h2>Challenges</h2>
-            <p>
-                A continuation project that was worked on by two other teams prior. Terrible foundation, had to start
-                from scratch. Needed both a front-facing client side and an administrative side.
-            </p>
+            <p>The technical constraints we face in our project are primarily the development
+                environment and the structure of the project. In terms of prior development, the previous teams
+                decided to develop using React Native for iOS and Android. However, this
+                poses a constraint for us because two of our team members owns a Mac so they would
+                be the only ones that do not need to run a virtual machine to access XCode. While
+                downloading and running a virtual machine is possible, It can be an expensive (in terms
+                of space) and slow process to set up, and performance will not be optimal.</p>
+            <ol>
+                <li class="regular">The foundation for this project was outdated and did not have the capabilities the
+                    stakeholders needed for the product.</li>
+                <li class="regular">Both a front-fracing client side and an administrative side were needed for both the
+                    mobile and web applications.</li>
+            </ol>
         </div>
 
         <!--Solutions -->
         <div class="inner-container" id="solutions">
             <h2>Solutions</h2>
-            <p>
-                We created a multi-platform, multi-facing application that allowed 
-            </p>
+            <ol>
+                <li class="regular">Design a mobile and web application for admins
+                    and instructors</li>
+                <li class="regular">Create a designated space for communication
+                    and information sharing</li>
+            </ol>
 
         </div>
 
@@ -109,10 +187,120 @@ LINK WEBSITE
         <div class="inner-container" id="process">
             <h2>Design Process</h2>
             <h3>Competitive Analysis</h3>
-            <h3>Low Fidelity Prototype</h3>
-            <h3>Style Guide</h3>
-            <h3>Iterations</h3>
+            <p>
+                The main competitors of CDT are centers of research and excellence that focus on similar missions and
+                target similar audiences such as:
+            </p>
+            <div class="row">
+                <table class="table col-md-6">
+                    <thead>
+                        <tr>
+                            <th>Facebook</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+
+                                <p>Strengths</p>
+                                <ul>
+                                    <li>Allows creation of group chats and group pages</li>
+                                    <li>Ability to attach files</li>
+                                    <li>Allows notifications</li>
+                                </ul>
+
+                                <p>Weaknesses</p>
+                                <ul>
+                                    <li>Group chats can become disorganized</li>
+                                    <li>Not everyone uses Facebook or checks often</li>
+                                    <li>No time entry management</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table col-md-6">
+                    <thead>
+                        <tr>
+                            <th>Google Calendar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Strengths</p>
+                                <ul>
+                                    <li>Shares calendars with individuals or organizations</li>
+                                    <li>Personal calendar integration</li>
+                                    <li>Allows notifications</li>
+                                </ul>
+
+                                <p>Weaknesses</p>
+                                <ul>
+                                    <li>No messaging feature</li>
+                                    <li>Can be overwhelming for administrators to manage</li>
+                                    <li>No file repository</li>
+                                    <li>No time entry management</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table col-md-6">
+                    <thead>
+                        <tr>
+                            <th>Google Forms</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Strengths</p>
+                                <ul>
+                                    <li>Responses export to an Excel sheet</li>
+                                </ul>
+
+                                <p>Weaknesses</p>
+                                <ul>
+                                    <li>No messaging feature</li>
+                                    <li>No event feature</li>
+                                    <li>No file repository</li>
+                                    <li>No time entry management</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table col-md-6">
+                    <thead>
+                        <tr>
+                            <th>Slack</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Strengths</p>
+                                <ul>
+                                    <li>Channels for organization</li>
+                                    <li>Ability to attach files</li>
+                                </ul>
+
+                                <p>Weaknesses</p>
+                                <ul>
+                                    <li>Not all mentors use Slack or check often</li>
+                                    <li>No file repository</li>
+                                    <li>No time entry management</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- <h3>Goals</h3> -->
+            
         </div>
+    </div>
     </div>
 
 </body>

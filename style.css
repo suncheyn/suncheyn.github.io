@@ -17,8 +17,7 @@ body {
 /* Sitewide */
 
 .container-fluid {
-    padding-right: 15%;
-    padding-left: 15%;
+    padding: 0 15%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -147,7 +146,7 @@ body {
 /* Projects Main Page */
 
 .card:not(#mainHeader):not(.column):hover h3 {
-    color: var(--accent-color1)
+    color: var(--accent-color1);
 }
 
 .card {
@@ -217,6 +216,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color:white;
+
 }
 
 .inner-nav {
@@ -278,7 +279,8 @@ body {
     padding-bottom: 5px;
 }
 .project-pics-wireframe {
-    width: 100%;
+    width: 75%;
+    display: block;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 5px;
@@ -471,8 +473,12 @@ p {
         display: flex;
         flex-flow: column;
     }
-    .main-img {order: 1}
-    .section {order: 2}
+    .main-img {
+        order: 1;
+    }
+    .section {
+        order: 2;
+    }
     .project-pics {
         width: 100%;
     }
@@ -497,10 +503,7 @@ p {
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
-    .container-fluid {
-        padding-right: 2%;
-        padding-left: 2%;
-    }
+  
     .card-img {
         height: 275px;
     }
@@ -518,9 +521,13 @@ p {
         display: flex;
         flex-flow: column;
     }
-    .main-img {order: 1}
-    .section {order: 2}
+    .main-img {
+        order: 1;
 
+    }
+    .section {
+        order: 2
+    }
     .img-row {
         width: 100%;
         border-radius: 0;
