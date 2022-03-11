@@ -498,11 +498,12 @@ p {
         font-size: 1rem;
     }
     .col-md-6 {
+        max-width: 100%;
         padding: 1em;
     }
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
+@media (min-width: 641px) and (max-width: 1080px) {
   
     .card-img {
         height: 275px;
@@ -553,9 +554,17 @@ p {
     h4, h5 {
         font-size: 1.1rem;
     }
-
-
+    .col-md-6 {
+        max-width: 100%;
+        padding: 1em;
+        flex: 1;
+    }
+    .col-md-4 {
+        max-width: 100%;
+    }
 }
+
+
 
 /*Home Page*/
 
